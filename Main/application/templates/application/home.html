@@ -1,0 +1,10 @@
+{% extends 'application/layout.html' %}
+{% load static %}
+{% block content %}
+
+{% for i in response.results %}
+      <h2>ID: {{ i.Id }}</h2>
+      <h2>QuestionTitle: {{ i.title }}</h2>
+{% endfor %}
+
+{% endblock %}
